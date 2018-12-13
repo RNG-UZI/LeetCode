@@ -9,7 +9,7 @@ class Solution {
         	char c = s.charAt(i);
         	if(Character.isDigit(c)) {
         		int cur = c - '0';
-        		while(i + 1 < s.length && Character.isDigit(s.charAt(i + 1))) {
+        		while(i + 1 < s.length() && Character.isDigit(s.charAt(i + 1))) {
         			cur = 10 * cur + s.charAt(++i) - '0';
         		}
         		res += sign * cur;
